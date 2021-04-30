@@ -26,12 +26,12 @@ class GovernmentTenderSpider(scrapy.Spider):
     # start_urls = ['http://www.google.com/']
 
     custom_settings={
-    			'DOWNLOAD_DELAY':'3',
+    			'DOWNLOAD_DELAY':'1',
     			'LOG_LEVEL':'INFO',
     			'DOWNLOADER_MIDDLEWARES':{'scrapy_selenium.SeleniumMiddleware': 800},
     			'SELENIUM_DRIVER_NAME':'chrome',
     			'SELENIUM_DRIVER_EXECUTABLE_PATH' : which('chromedriver'),
-    			'SELENIUM_DRIVER_ARGUMENTS':['--non headless',"--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage",'--log-level=3']
+    			'SELENIUM_DRIVER_ARGUMENTS':['--headless',"--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage",'--log-level=3']
  # '--disable-gpu'
 
     			}

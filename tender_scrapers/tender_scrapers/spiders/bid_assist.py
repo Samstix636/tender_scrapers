@@ -6,7 +6,7 @@ class BidAssistSpider(scrapy.Spider):
     name = 'bid_assist'
     # allowed_domains = ['www.google.com']
     custom_settings={
-                'DOWNLOAD_DELAY':'2',
+                'DOWNLOAD_DELAY':'0.5',
                 # 'LOG_LEVEL':'INFO',
                 }
     start_urls = ['https://bidassist.com/all-tenders/active?keywords=food%2Ccanteen&filter=KEYWORD:cafeteria%7Cfood%7Ccanteen%7Cmicronutrient%7Cmid-day%20meal&sort=RELEVANCE:DESC&pageNumber=0&pageSize=10&tenderType=ACTIVE&tenderEntity=TENDER_LISTING']
